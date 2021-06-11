@@ -1,0 +1,81 @@
+.vetka-4 {
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+}
+.slider {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.footer p {
+    color: #9A1212;
+    text-align: right;
+}
+
+.active {
+    background: #9a1212;
+}
+
+.active a {
+    color: white;
+}
+
+.info {
+    max-width: 1000px;
+    font-size: 22px;
+    text-align: right;
+    margin: 15px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px){
+    .slider img:nth-child(5) {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .slider img:nth-child(4) {
+        display: none;
+    }
+    .info {
+        font-size: 18px;
+        text-align: center;
+    }
+    .top {
+        flex-direction: column;
+    }
+    .top img {
+        height: 140px;
+    }
+}
+@media screen and (max-width: 650px){
+    .slider img:nth-child(3) {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .slider img:nth-child(2) {
+        display: none;
+    }
+    .slider {
+        justify-content: center;
+    }
+    .footer p {
+        font-size: 15px;
+    }
+    .info {
+        font-size: 15px;
+    }
+}
